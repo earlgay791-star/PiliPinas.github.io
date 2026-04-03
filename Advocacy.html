@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PILI-PINAS</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Tahoma, Tahoma ;
+}
+
+header{
+    background: #276299	;
+    color:#FCD116 ;
+    padding:10px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}	
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:50px;
+    margin-right:10px;
+}
+
+nav a{
+    color:white;
+    margin:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+.hero{
+    background:url("https://scontent.fmnl17-1.fna.fbcdn.net/v/t39.30808-6/659855614_922382770719574_7587920135960886573_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeHiYaT-sy3xvN8eee0W5f7CJlrAcJRK02omWsBwlErTaiyZBGNRRmUbyZhLLfVTC34KiKSfgYZ-Bs52z1CHuvuZ&_nc_ohc=iHJunEWmakoQ7kNvwHJyn5U&_nc_oc=AdpKebcehlD-M6ChL_od-AiYDKcr2lM7XY4zJLqDhY0vqTiWP5y3odUOnof5Sr3xCPw&_nc_zt=23&_nc_ht=scontent.fmnl17-1.fna&_nc_gid=l1haOJ-4JC_V1ESNlUBa6w&_nc_ss=7a3a8&oh=00_Af2kdAjENtwQ0Zjxr4NuGuPE9PjF5yM6eYoKgSxoxYmxfQ&oe=69D445EB") center/cover;
+    color:white;
+    text-align:center;
+    padding:200px 50px;
+}
+
+.hero h1{
+    font-size:70px;
+}
+
+section{
+    padding:30px;
+    text-align:center;
+}
+
+.mission{ background:#ABD4FE  ; }
+.vision{ background:#C6E2FF  ; }
+.members{
+ background:#C6E2FF;
+}
+
+.history{
+ background:#ABD4FE;
+}
+
+.member-container{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+	align-items:flex-start;
+}
+
+.member{
+    text-align:center;
+    background:white ;s
+    padding:15px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.member:hover{
+    transform:translateY(-10px) scale(1.05);
+    box-shadow:0 20px 30px rgba(0,0,0,0.3);
+}
+
+.member img{
+    width:260px;
+    height:260px;
+    border-radius:12px;
+    object-fit:cover;
+    border:5px green;
+    transition:0.4s;
+}
+
+.member:hover img{
+    transform:scale(1.1);
+}
+
+footer{
+    background:#ABD4FE ;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+.timeline{
+    display:flex;
+    gap:30px;
+    padding:30px;
+    overflow-x:auto;
+}
+
+.timeline-item{
+    min-width:320px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:0.5s;
+    opacity:0;
+    transform:translateY(40px);
+}
+
+.timeline-item.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.timeline-item:hover{
+    transform:scale(1.05);
+}
+
+.timeline-item img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:15px 15px 0 0;
+}
+
+.timeline-content{
+    padding:20px;
+}
+</style>
+
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <img src="https://scontent.fmnl17-4.fna.fbcdn.net/v/t1.15752-9/649642877_1974870437245299_7512702845381706456_n.png?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeF_neKZ6JiB4YofmapAuN3nwSvbMyJ3S3DBK9szIndLcE0iCg580jtRYpSoYsM1kWt8i7mLFlRue73cCAh8zdxJ&_nc_ohc=QH-x9SyjU7EQ7kNvwGqD0PG&_nc_oc=AdpT-KCm4t2UadEUGeikyG4KQyXSxMRB4QdFmVdwG4W4dXhSA-tPaD9fUR9jP7h-byc&_nc_zt=23&_nc_ht=scontent.fmnl17-4.fna&_nc_ss=8&oh=03_Q7cD4wGTNHoYvnJbItM17ZDgWXUCAroTxX1efR5ukpgpln1qkg&oe=69E39A0B">
+        <h2>Pili-Pinas</h2>
+    </div>
+
+    <nav>
+        <a href="#mission">Misyon</a>
+        <a href="#vision">Visyon</a>
+        <a href="#members">Members</a>
+		<a href="https://www.facebook.com/share/p/1D8hHzRYG3/">Join Our Raffle!</a>
+		<a href="https://www.facebook.com/share/p/1CFnwuuCRq/">Part 1:Emoji Poll</a>
+		<a href="https://www.facebook.com/share/p/1DpwNoc3xN/">Part 2:Build Your Leader</a>
+    </nav>
+</header>
+
+<div class="hero">
+<p>  </p>
+</div>
+
+
+<section id="mission" class="mission">
+  <h1 style="color: #00297C;">Mission</h1>
+    <h2>A country where every vote is a ray of light guiding the Philippines towards leadership that is honest, just,
+    and truly concerned for the people—where the people are aware, critical, and have a strong stance in choosing their leader.
+    </h2>
+</section>
+
+<section id="vision" class="vision">
+    <h1 style="color: #00297C;">Vision</h1>
+   <p><h2>Enlighten the minds of Filipino voters through knowledge and awareness, so that every vote becomes a wise decision.<div>
+   A step that chooses a leader with integrity and a heart that serves the people.<div> </p> </section>      
+
+ 
+<section id="history" class="history">
+<h1 style="color: #00297C;">History of Women’s Right to Vote</h1>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<img src="https://columbian.gwu.edu/sites/g/files/zaxdzs4901/files/image/suffrage_1080x720.jpg">
+<div class="timeline-content">
+<h2>1848</h2>
+<p>Seneca Falls Convention in USA led by Elizabeth Cady Stanton and Lucretia Mott.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSx5xsSbMfB1B9lfx-nssOWw1MJfrEjvkvxvtmloJ2oVRlWUog">
+<div class="timeline-content">
+<h2>1893</h2>
+<p>New Zealand became the first country to grant women the right to vote.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<img src="">
+<div class="timeline-content">
+<h2>1902–1906</h2>
+<p>Australia granted voting rights. Finland gave full political rights.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOcLYL2YoZZhuAynkZO43bdfcyAx4c3IjidlOrOglOg9X715YW">
+<div class="timeline-content">
+<h2>1918–1920</h2>
+<p>War contributions helped UK and USA grant voting rights.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<img src="">
+<div class="timeline-content">
+<h2>Global Spread</h2>
+<p>Canada, Germany, France, and Japan followed.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-6vtX-wiNvE1Hkb2px_vbrocksyEkq4hPFmEzEmcbZ2vHjbb9">
+<div class="timeline-content">
+<h2>Philippines 1937</h2>
+<p>Filipino women gained voting rights after a nationwide plebiscite.</p>
+</div>
+</div>
+</section>
+
+<section id="members" class="members">
+    <h2 style="color: #00297C;">Our Members</h2>
+
+    <div class="member-container">
+
+        <div class="member">
+            <img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/659407774_3030489427144150_5978964336594362212_n.jpg?stp=dst-jpg_s2048x2048_tt6&_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHNZcXT_HMnDjycl1uqFeI2kyHzG4Ue-w-TIfMbhR77Dz4ixXBFYf5NJafg9YRkduUc9Vfd6eD3WkSY6KoQ1fOJ&_nc_ohc=jbM_5EIbf6YQ7kNvwG2feXN&_nc_oc=Adox2Xj6WHN6Usi64wbls_7mUnw5vdAsvol_D5n-w2hjOYB6_iS2-xCMj03OsP95Dh8&_nc_zt=23&_nc_ht=scontent.fmnl17-2.fna&_nc_ss=7a3a8&oh=03_Q7cD5AEIj2-ypZyDjCWC3x6Bmmhuyj_1UecXlUIvLPS4aQTigg&oe=69F33CE2">
+            <h3>Liban, Samara Brie A.</h3>
+        </div>
+
+        <div class="member">
+            <img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/655958761_2482235085541706_2508928136586326766_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeE2wgceHE3mMligmjRrCbDCFBwkQc3hhNQUHCRBzeGE1GRQgGmDc8LpSdcahUaw6NWpdeFefbTJ8RZIoGw-EXcR&_nc_ohc=WFEUe5DBR08Q7kNvwGPuTzZ&_nc_oc=AdpqhpEnuYU501zabLYR0qKIc21Ua1SaEVhc6DRVLkpLVEpa3WeyTvPM6QBX_iRqA1M&_nc_zt=23&_nc_ht=scontent.fmnl17-2.fna&_nc_ss=7a3a8&oh=03_Q7cD5AEZ8ODKcy8NU7bhkIdvBW2R7tpUqrajSoFvJvJTqfLWtQ&oe=69F33323">
+            <h3>Bacolod, Fayth Caroline</h3>
+        </div>
+
+		<div class="member">
+		   <img src="https://scontent.fmnl17-8.fna.fbcdn.net/v/t1.15752-9/657391215_1854559801928747_7616171166200256588_n.jpg?stp=dst-jpg_s2048x2048_tt6&_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeH_G-j1Ecl6OSVL5EQ8zPI80HWTg00mpnPQdZODTSamc9DSNtn8tHx0iav46xPDP_A5Sz4-mYJZPeSLpTeJLxLk&_nc_ohc=7kexWSp-cyYQ7kNvwFvSod3&_nc_oc=AdpSCc_npbTAz5iXTUqfe9lvrSUXPEzOnxFfA2cKIhZ-iblozhVjHBlewMcwbVZPMaQ&_nc_zt=23&_nc_ht=scontent.fmnl17-8.fna&_nc_ss=7a3a8&oh=03_Q7cD5AEoQ9gKvOFRVgOs3LnvhfsewSB7emfyYP9UMf8ZhTaeXw&oe=69F35674">
+		   <h3>Paler, Bethany M.</h3>
+		</div>
+
+		<div class="member">	
+			<img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/659131275_26826051837012501_7015502779323710172_n.jpg?stp=dst-jpg_s2048x2048_tt6&_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeECOvSDAqNaa9Xm98k1tV4KS_6Uh0mHQn5L_pSHSYdCfgu5wF1lJbDxSzev3Y3fFeL2xQeEoO53DxrbtHhSr5kC&_nc_ohc=xYGwenizGOEQ7kNvwHHAxB5&_nc_oc=AdoINf9TP7LbrQs7Hxx9fFNrVPC3zp-PNSjtfpcY5KCOXHqHvS_Ylks0TpLfEPQ-5TI&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&_nc_ss=7a3a8&oh=03_Q7cD5AHDaXHrdeQLSSdtCCc5jLPd7Y8Dfa7E869EVxZTqBQN2Q&oe=69F3510C">
+			<h3>Oba, Ernest John G.</h3>
+		</div>
+
+		<div class="member">
+			<img src="https://scontent.fmnl17-8.fna.fbcdn.net/v/t1.15752-9/662189095_1247773560859317_8972521984008036353_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHaOFHeMDex-_QQ-pbFz7BPLVey8kUq9PEtV7LyRSr08cKM4Ej6JrVPHuCbd1KOxoDFXl5Ja1luWu8suUKUfb6H&_nc_ohc=Zs_1AbsVR-YQ7kNvwH1nBmC&_nc_oc=Adry2KNlnuafS1mFvgk3ZXVii-nq7iyPdxUkI_QUdsip7u3LL7bvCzDQkZ3iJwtli90&_nc_zt=23&_nc_ht=scontent.fmnl17-8.fna&_nc_ss=7a3a8&oh=03_Q7cD5AFEYGDzBOIvOBoSWt5i7qLSTkXEjJ0AivbNgocXhkd87w&oe=69F36059">
+			<h3>Lautrizo, Cailey Ayesha D.</h3>
+        </div>
+
+		<div class="member">
+			<img src="https://scontent.fmnl17-7.fna.fbcdn.net/v/t1.15752-9/657143898_2096504601208214_6659500620115340939_n.jpg?stp=dst-jpg_s2048x2048_tt6&_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeE94j3_hfCHnBk4zM38Yr-MJoEqLmT8hu4mgSouZPyG7tySEaTPXxTj1u-GKJHXXv-3OVSRUi4mPV5l6XpHYBCw&_nc_ohc=wGmJbM7BvDQQ7kNvwFs9Dc8&_nc_oc=AdpfMoRtfo_ad9QUYoqC6dJmXQkMRX_IuEnmJXPDrZwHoWnbOWH6jqI75KB859-f0Do&_nc_zt=23&_nc_ht=scontent.fmnl17-7.fna&_nc_ss=7a3a8&oh=03_Q7cD5AEbi_vdxNjVFVS6YOmvNMjic5tvKhNOnGu7cnr_29s_7Q&oe=69F357B3">
+			<h3>Buenaventura, Eirene Nicole B.</h3>
+		</div>
+
+		<div class="member">
+			<img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/656786967_1335970805063065_2280487781444464152_n.jpg?stp=dst-jpg_s2048x2048_tt6&_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHmZCxSNKMiXqUdUXj5Kl5cgYOZR47E4TGBg5lHjsThMYFuYVDSMBB2Jb5g3_7rWrMteB5fyxxNPed9AognkYeR&_nc_ohc=EOwtTtL6-4UQ7kNvwFyA6wQ&_nc_oc=AdpvXDUJG4ggnlX2DycxGXtaGzBkGmpM5hieE26bx9vUzxgt0mgod0u2pE3_nCbshBY&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&_nc_ss=7a3a8&oh=03_Q7cD5AGJGxpetRcWrWboNIoSuo92F0LkagiJLwgixg_N2iIbrQ&oe=69F3331C">
+			<h3>Panergo, Kurt Jared A.</h3>
+		</div>
+
+		<div class="member">
+			<img src="https://scontent.fmnl17-8.fna.fbcdn.net/v/t1.15752-9/659067389_1649764172838230_1588430308465699002_n.jpg?stp=dst-jpg_s2048x2048_tt6&_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHnBB4Wu-Rhujcz2QBPvA--XK7Xh2Z9N_JcrteHZn038lF2FlJPVyjQ3c6ct_5FxVzK7_97F-KGauJP1j4W0Qps&_nc_ohc=wDlwH4McF4wQ7kNvwFCAEb8&_nc_oc=AdpafJ7Y8WKWYJg_YjhBW5VeAfkKFWLAW44faVdkPDXdTDUNFbM3Jzq2K63-FuLyPHw&_nc_zt=23&_nc_ht=scontent.fmnl17-8.fna&_nc_ss=7a3a8&oh=03_Q7cD5AGOQdu7SNfa-RAkWYDEDBy9Wn7tmQw31h5WqRQB6mBhtg&oe=69F3578A">
+			<h3>Reyes, Christine Joy D.</h3>
+		</div>
+
+		<div class="member">
+			<img src="https://scontent.fmnl17-8.fna.fbcdn.net/v/t1.15752-9/657516405_4270670436520477_1392742494299272636_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEaa3xTAEnAgd90sSTmTlC8vx60jbPn2QW_HrSNs-fZBYYiAmQYwK9fBVL-cJTJ4l4X6fhXVpmcqNXZEtxTU-Uw&_nc_ohc=V47sy7pEdeYQ7kNvwGAiFJ6&_nc_oc=AdqW4Axvrgm7dPgcMxbVkIqRGX2DqUWdOHyNx7-VH7pWWo32Z9YtlbX60TXDXgMGUNQ&_nc_zt=23&_nc_ht=scontent.fmnl17-8.fna&_nc_ss=7a3a8&oh=03_Q7cD5AE0BEOw3BqQJWD3biDrZIrdEFxr7FoajtQQsnmgbe0_7g&oe=69F359B6">
+			<h3>Jomadiao, Nicole Angelique N.</h3>
+		</div>
+
+		<div class="member">
+			<img src="https://scontent.fmnl17-6.fna.fbcdn.net/v/t1.15752-9/662210378_1442584513479996_699642564292592432_n.jpg?stp=dst-jpg_s2048x2048_tt6&_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeG2D3vz-U1YThcHRoyeXpfZHrcemYNPj6oetx6Zg0-PqlZNjWUDF51y51xO16sGJlYYT7GGKJF-1cPfGAWwlDih&_nc_ohc=WaXdv5s34H8Q7kNvwFCGl2i&_nc_oc=AdrL_I7T1syB64tiuZDiIey9tI3KSmKkp5ZUWNsv89FszSHwlesIHZbBj0DQVfuOAjU&_nc_zt=23&_nc_ht=scontent.fmnl17-6.fna&_nc_ss=7a3a8&oh=03_Q7cD5AEYXrX8TxNnt36-cs0Sf9vhc34a7dOa20RK3lkxPmjplw&oe=69F3513C">
+			<h3>Silacan, Kemp Arvin B.</h3>
+		</div>
+
+		<div class="member">
+			<img src="https://scontent.fmnl17-6.fna.fbcdn.net/v/t1.15752-9/656635333_1626986018334589_3342866674402293045_n.jpg?stp=dst-jpg_s2048x2048_tt6&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHaF2WJLwnw8LR0dyXNNhWcvYUpYMzJkCa9hSlgzMmQJl_eVjwNDMulmRZcFRTgsg7T9FAu2AjEs2pJL-qDN0zk&_nc_ohc=3LFYM7fxYRcQ7kNvwHeHkPG&_nc_oc=Adogyxdj-4OIr6AEcB-dEoxx84Mc5ptyWXAuMO7OogARQQQXhKOHwZnhONSQfU8bMzQ&_nc_zt=23&_nc_ht=scontent.fmnl17-6.fna&_nc_ss=7a3a8&oh=03_Q7cD5AE1YhyJBzN_my-Sz9U9QUcOx6foufDn7wW_jt_y8qbC7w&oe=69F342B3">
+				<h3>Morada, Daniel B.</h3>
+		</div>
+	</div>
+</section>
+
+<footer>
+    <p>
+    </p>
+</footer>
+<script>
+const items = document.querySelectorAll(".timeline-item");
+
+window.addEventListener("scroll", () => {
+items.forEach(item => {
+const top = item.getBoundingClientRect().top;
+if(top < window.innerHeight - 50){
+item.classList.add("show");
+}
+});
+});
+</script>	
+</body>
+</html>
